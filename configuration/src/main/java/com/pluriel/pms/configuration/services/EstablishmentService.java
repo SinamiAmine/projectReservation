@@ -1,4 +1,4 @@
-package com.pluriel.pms.configService.services;
+package com.pluriel.pms.configuration.services;
 
 import java.util.List;
 

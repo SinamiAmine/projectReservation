@@ -1,11 +1,11 @@
-package com.pluriel.pms.configService.services.impls;
+package com.pluriel.pms.configuration.services.impls;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pluriel.pms.configService.services.EstablishmentService;
+import com.pluriel.pms.configuration.services.EstablishmentService;
 import com.pluriel.pms.data.entities.Establishment;
 import com.pluriel.pms.data.repositories.EstablishmentRepository;
 
