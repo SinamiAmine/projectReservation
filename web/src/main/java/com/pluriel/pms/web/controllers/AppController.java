@@ -28,7 +28,7 @@ public class AppController {
 		return new ResponseEntity<String>("Hello Config Service", HttpStatus.OK);
 	}
 
-	@Operation(summary = "This is to fetch All the etablishements stored in Db")
+	@Operation(summary = "This is to dfetch All the etablishements stored in Db")
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "Fetched All the etablishements form Db", content = {
 					@Content(mediaType = "application/json") }),
