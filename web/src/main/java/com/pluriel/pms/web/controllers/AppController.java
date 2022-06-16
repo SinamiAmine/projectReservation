@@ -38,4 +38,6 @@ public class AppController {
 		return new ResponseEntity<List<Establishment>>(establishmentService.get(), HttpStatus.OK);
 	}
 
+
+
 }
