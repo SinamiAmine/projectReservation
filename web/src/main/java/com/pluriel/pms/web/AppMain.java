@@ -1,4 +1,4 @@
-package com.pluriel.pms.configService;
+package com.pluriel.pms.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import com.pluriel.pms.configService.services.EstablishmentService;
+import com.pluriel.pms.configuration.services.EstablishmentService;
 import com.pluriel.pms.data.entities.Establishment;
 
 @SpringBootApplication
@@ -29,10 +29,11 @@ public class AppMain implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Establishment build = Establishment.builder().name("Sofitel Tanger").build();
 		Establishment build2 = Establishment.builder().name("Sofitel Merrakech").build();
+		Establishment build3 = Establishment.builder().name("Sofitel AlHoceima").build();
 		establishmentService.purge();
 		establishmentService.add(build);
 		establishmentService.add(build2);
-
+		establishmentService.add(build3);
 	}
 
 }
