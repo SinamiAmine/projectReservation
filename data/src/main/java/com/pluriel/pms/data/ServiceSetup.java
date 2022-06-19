@@ -24,7 +24,7 @@ public class ServiceSetup {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setUrl("jdbc:postgresql://localhost:5432/pms_dev?currentSchema=dev");
 		dataSource.setUsername("postgres");
-		dataSource.setPassword("123456789");
+		dataSource.setPassword("root");
 		return dataSource;
 	}
 
